@@ -1,0 +1,70 @@
+@import "main.css";
+
+.contact__container {
+    display: grid;
+    grid-template: 1fr / 4fr 6fr;
+    height: 100%;
+    width: 100%;
+}
+
+.contact__picture {
+    width: 100%;
+    background-image: url('../assets/img/contact_bg.jpg');
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    margin: 0;
+}
+
+.contact__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.contact__form form {
+    width: 50%;
+}
+
+@media only screen and (max-width: 425.9px) {
+    .contact__container {
+        grid-template: 120px auto / 1fr;        
+    }
+    .contact__form form{
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width: 426px) {
+    .contact__container {
+        grid-template: 130px auto / 1fr;        
+    }
+    .contact__form form{
+        width: 80%;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    .contact__container {
+        grid-template: 170px auto / 1fr;        
+    }
+    .contact__form form{
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 767.9px) {
+    .contact__form {
+        align-items: flex-start;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .contact__container {
+        grid-template: 1fr / 4fr 6fr;
+    }
+    .contact__form form{
+        width: 50%;
+    }
+}

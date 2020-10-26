@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The FullSnack Store</title>
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/products.css">
+    <link rel="stylesheet" href="./styles/card.css">
+</head>
+<body>
+    <section>
+        <figure class="menu__bars" id="menu__bars">
+            <img src="./assets/icons/menu-black.svg" alt="">
+        </figure>
+        <aside class="menu" id="sidebar">
+            <figure class="menu__logo">
+                <img src="./assets/img/The_FullSnack_Store.svg" alt="">
+            </figure>
+            <div class="menu__list">
+                <ul class="menu__links">
+                    <a class="link" href="index.html">
+                        <li class="menu__link">
+                            Home
+                        </li>
+                    </a>
+                    <a class="link" href="about.html">
+                        <li class="menu__link">
+                            Acerca de
+                        </li>
+                    </a>                        
+                    <a class="link" href="products.html">
+                        <li class="menu__link">
+                            Productos
+                        </li>
+                    </a>
+                    <a class="link" href="./faqs.html">                    
+                        <li class="menu__link">
+                            Preguntas Frecuentes
+                        </li>
+                    </a>
+                    <a class="link" href="contact.html">
+                        <li class="menu__link">
+                            Contacto
+                        </li>
+                    </a>
+                    <li class="menu__link close" >                        
+                        <img src="./assets/icons/close.svg" alt="" id="closeBtn">                        
+                    </li>
+                </ul>
+            </div>
+        </aside>
+    </section>
+    <header class="location__bar">
+        <figure class="location__logo">
+            <img src="./assets/img/The_FullSnack_Store.svg" alt="">
+        </figure>
+        <h1 class="title">Productos</h1>
+    </header>
+    <main class="products__container" id="productsList">
+        <!-- Aquí se insertan elementos de forma dinámica con JavaScript-->
+    </main>
+    <script src="./scripts/products.js"></script>
+    <script src="./scripts/header.js"></script>
+</body>
+</html>

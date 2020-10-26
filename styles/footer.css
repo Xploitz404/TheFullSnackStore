@@ -1,0 +1,29 @@
+@import "main.css";
+
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    box-sizing: border-box;
+}
+
+.footer__text {
+    color: white;
+    font-family: var(--main-font);
+    font-weight: bold;
+    text-align: center;
+}
+
+.footer__link {
+    text-decoration: underline;
+}
+
+
+@media only screen and (max-width: 375px) {
+    .footer {
+        padding: 0.3rem 0.5rem;
+    }
+}

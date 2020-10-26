@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The FullSnack Store</title>
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/contact.css">
+    <link rel="stylesheet" href="./styles/forms.css">
+    <link rel="stylesheet" href="./styles/buttons.css">
+</head>
+<body>
+    <header>
+        <figure class="menu__bars" id="menu__bars">
+            <img src="./assets/icons/menu-black.svg" alt="">
+        </figure>
+        <aside class="menu" id="sidebar">
+            <figure class="menu__logo">
+                <img src="./assets/img/The_FullSnack_Store.svg" alt="">
+            </figure>
+            <div class="menu__list">
+                <ul class="menu__links">
+                    <a class="link" href="index.html">
+                        <li class="menu__link">
+                            Home
+                        </li>
+                    </a>
+                    <a class="link">
+                        <li class="menu__link">
+                            Acerca de
+                        </li>
+                    </a>                        
+                    <a class="link" href="products.html">
+                        <li class="menu__link">
+                            Productos
+                        </li>
+                    </a>
+                    <a class="link" href="./faqs.html">                    
+                        <li class="menu__link">
+                            Preguntas Frecuentes
+                        </li>
+                    </a>
+                    <a class="link" href="contact.html">
+                        <li class="menu__link">
+                            Contacto
+                        </li>
+                    </a>
+                    <li class="menu__link close" >                        
+                        <img src="./assets/icons/close.svg" alt="" id="closeBtn">                        
+                    </li>
+                </ul>
+            </div>
+        </aside>
+    </header>
+    <main class="contact__container">
+        <figure class="contact__picture">        
+        </figure>
+        <section class="contact__form">
+            <form action="" method="POST">
+                <p class="title">Contáctanos</p>
+                <div class="form__field">
+                    <label class="form__label" for="nombre">Nombre</label>
+                    <input class="input" type="text" name="nombre">
+                </div>
+                <div class="form__field">
+                    <label class="form__label" for="email">Email</label>
+                    <input class="input" type="text" name="email">
+                </div>
+                <div class="form__field">
+                    <label class="form__label" for="mensaje">¿Cómo te podemos ayudar?</label>
+                    <textarea name="mensaje" class="input" maxlength="500" rows="4"></textarea>
+                </div>
+                <div class="form__submit">
+                    <button class="button primary">
+                        Enviar
+                    </button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="./scripts/header.js"></script>
+</body>
+</html>

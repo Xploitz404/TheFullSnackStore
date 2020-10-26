@@ -4,13 +4,129 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The FullSnack Store</title>
-    
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/card.css">
 </head>
 <body>
     <header>
-        
+        <figure class="menu__bars" id="menu__bars">
+            <img src="./assets/icons/menu-black.svg" alt="">
+        </figure>
+        <aside class="menu" id="sidebar">
+            <figure class="menu__logo">
+                <img src="./assets/img/The_FullSnack_Store.svg" alt="">
+            </figure>
+            <div class="menu__list">
+                <ul class="menu__links">
+                    <a class="link" href="index.html">
+                        <li class="menu__link">
+                            Home
+                        </li>
+                    </a>
+                    <a class="link" href="about.html">
+                        <li class="menu__link">
+                            Acerca de
+                        </li>
+                    </a>                        
+                    <a class="link" href="products.html">
+                        <li class="menu__link">
+                            Productos
+                        </li>
+                    </a>
+                    <a class="link" href="./faqs.html">                    
+                        <li class="menu__link">
+                            Preguntas Frecuentes
+                        </li>
+                    </a>
+                    <a class="link" href="contact.html">
+                        <li class="menu__link">
+                            Contacto
+                        </li>
+                    </a>
+                    <li class="menu__link close" >                        
+                        <img src="./assets/icons/close.svg" alt="" id="closeBtn">                        
+                    </li>
+                </ul>
+            </div>
+        </aside>
     </header>
-    <main></main>
-    <footer></footer>
+    <section class="welcome">
+        <section class="welcome__logo">
+            <img src="./assets/img/The_FullSnack_Store.svg" alt="">
+        </section>
+        <section class="welcome__video">
+            <video controls>
+                <source src="./assets/img/video.mp4">
+            </video>
+        </section>
+    </section>
+    <main>
+        <section class="">
+            <h1 class="title">
+                La mejor moda para l@s devs
+            </h1>
+            <section class="featured__container">
+                <div class="card">
+                    <figure class="card__picture">
+                        <img src="./assets/img/items/h3.jpg" alt="">
+                    </figure>
+                    <article class="card__description">
+                        <div class="card__info">
+                            <p class="card__title">Conjunto The Rave</p>
+                            <p class="card__price">$899</p>
+                        </div>
+                        <p class="paragraph">Una breve descripción</p>
+                    </article>
+                </div>
+                <div class="card">
+                    <figure class="card__picture">
+                        <img src="./assets/img/items/m4.jpg" alt="">
+                    </figure>
+                    <article class="card__description">
+                        <div class="card__info">
+                            <p class="card__title">Chamarra de Mezclilla</p>
+                            <p class="card__price">$799</p>
+                        </div>
+                        <p class="paragraph">Una breve descripción</p>
+                    </article>
+                </div>
+                <div class="card">
+                    <figure class="card__picture">
+                        <img src="./assets/img/items/m1.jpg" alt="">
+                    </figure>
+                    <article class="card__description">
+                        <div class="card__info">
+                            <p class="card__title">Camisa de Pinos</p>
+                            <p class="card__price">$499</p>
+                        </div>
+                        <p class="paragraph">Una breve descripción</p>
+                    </article>
+                </div>
+            </section>
+        </section>
+        <section class="why">
+            <h1 class="title">¿Por qué comprar con nosotros?</h1>
+            <p class="paragraph">
+                Como se suele decir, tu vestimenta es el reflejo de tu personalidad. Vestirse de una forma adecuada y profesional es sumamente importante tanto para hombres como para mujeres. Es innegable que la apariencia juega un papel importante y es la primera evaluación a la que somos sometidos porque es lo primero que se ve de nosotros.  La elección de nuestra ropa rara vez pasa desapercibida entre la gente de nuestro entorno.
+            </p>
+            <p class="paragraph">
+                Algunos estudios recientes revelan que la ropa que nos ponemos tiene efecto sobre nuestros niveles de desempeño, confianza en uno mismo e incluso nuestras habilidades para negociar.
+            </p>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="footer__text">
+            Desarrollado con 
+            <img src="./assets/icons/coffee.svg" alt=""> 
+            y <img src="./assets/icons/heart.svg" alt=""> 
+            por <a href="https://github.com/Xploitz404" class="footer__link link">Oscar Lara</a>
+        </p>
+    </footer>
+    <script src="./scripts/header.js"></script>
 </body>
 </html>

@@ -1,0 +1,38 @@
+@import "./colors.css";
+@import "./fonts.css";
+
+.input {
+    border: 2px solid var(--primary-color);
+    background-color: var(--light-color);
+    padding: 0.5rem 0.3rem;
+    border-radius: 3px;
+    width: 100%;
+    resize: none;
+    box-sizing: border-box;
+}
+
+.form__field {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.form__label {
+    font-family: var(--main-font);
+    text-align: left;
+    width: 100%;
+}
+
+.form__submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.form__submit button {
+    width: inherit;
+}

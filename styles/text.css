@@ -1,0 +1,34 @@
+@import "./fonts.css";
+
+.title {
+    font-family: var(--main-font);
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 1rem 0;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+}
+
+.link:hover, 
+.link:visited,
+.link:active,
+.link:focus {
+    text-decoration: none;
+    color: white;
+}
+
+.paragraph {
+    font-family: var(--main-font);
+    margin: 0;
+    text-align: justify;
+    margin-bottom: 0.5rem;
+}
+
+@media only screen and (max-width: 424.9px) {
+    .title {
+        font-size: 2rem;
+    }
+}

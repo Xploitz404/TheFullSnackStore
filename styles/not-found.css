@@ -1,0 +1,26 @@
+.not-found {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 65%;
+    margin: auto;
+}
+
+.not-found__action {
+    margin-top: 1rem;
+}
+
+.not-found__img {
+    width: 100%;
+}
+
+.not-found__img img {
+    width: 100%;
+}
+
+@media only screen and (max-width: 425px) {
+    .not-found {
+        width: 90%;
+    }
+}

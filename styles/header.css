@@ -1,0 +1,122 @@
+@import "./main.css";
+
+.menu {
+    display: grid;
+    height: 100%;
+    background-color: var(--primary-color);
+    grid-template: min-content auto / 250px;
+    align-items: flex-start;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    transform: translateX(-251px);
+    transition: 0.3s all;    
+}
+
+.menu__bars {
+    position: fixed;
+    left: 16px;
+    top: 16px;
+    margin: 0;
+}
+
+.menu__bars,
+.menu__link img {
+    width: 32px;
+    height: 32px;
+}
+
+.menu__bars img {
+    width: 100%;
+    height: 100%;
+}
+
+.menu.active {    
+    transform: translateX(0);
+}
+
+.menu__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.menu__logo img {
+    width: 120px;
+    height: 120px;
+    padding: 0 1rem;
+}
+
+.menu__links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.menu__link {
+    font-family: var(--main-font);
+    color: var(--white);
+    font-weight: bold;
+    margin: 0.5rem 0;
+    transition: 0.2s all;
+    font-size: 1.2rem;
+}
+
+.menu__link a:active,
+.menu__link a:visited {
+    color: white;
+}
+
+.menu__link:hover {
+    border-bottom: 1px solid white;
+    transform: translateX(10px);
+    cursor: pointer;
+}
+
+
+.location__bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background-color: var(--primary-color);
+}
+
+.location__bar h1 {
+    margin: 0 1rem;
+    color: white;
+}
+
+.location__logo,
+.location__logo img  {
+    margin: 0 1rem;
+    width: 60px;
+    height: 60px;
+}
+
+@media only screen and (max-width: 425px) {
+    .menu {
+        width: 100%;
+        transform: translateX(-425px);
+    }
+    .menu__bars {
+        top: 14px;
+        left: 8px;
+    }
+}
+
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+    .menu__bars {
+        top: 14px;
+        left: 8px;
+        margin: 0;
+    }
+}
